@@ -18,6 +18,20 @@ app.use(express.json());
 const userRoutes = require('./routes/userRoutes');
 app.use('/', userRoutes);
 
+
+
+
+// Routes
+const waitlistRoutes = require('./routes/waitlistRoutes');
+app.use('/', waitlistRoutes);
+
+// // Error handling middleware
+// app.use((err, req, res, next) => {
+//   console.error(err.stack);
+//   res.status(500).json({ message: 'Internal server error' });
+// });
+
+
 // Error handling middleware
 app.use((err, req, res, next) => {
   console.error(err.stack);
