@@ -6,7 +6,7 @@ const mongoose = require('mongoose');
 require('dotenv').config();
 async function connectToDatabase() {
   try {
-    await mongoose.connect(process.env.MONGO_DB_URL, {
+    await mongoose.connect("mongodb+srv://quicksort:quicksort@cluster0.09znb0u.mongodb.net/?retryWrites=true&w=majority", {
       useNewUrlParser: true,
       useUnifiedTopology: true,
     });
