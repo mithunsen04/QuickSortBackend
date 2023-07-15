@@ -59,7 +59,7 @@ app.use('/', userRoutes);
 
   //redirect to home page
 
- res.redirect(302,`http://localhost:3000?token=${token}`)
+ res.redirect(302,`https://www.quicksort.ai/?token=${token}`)
 }
 
  async function getGoogleOAuthTokens({ code }) {
@@ -99,7 +99,7 @@ app.use((err, req, res, next) => {
 });
 
 // Start the server
-const port = process.env.PORT || 8000;
+const port = process.env.PORT ;
 app.listen(port, async () => {
   try {
     await connectToDatabase();
