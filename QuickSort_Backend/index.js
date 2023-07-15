@@ -69,7 +69,7 @@ app.use('/', userRoutes);
       code,
       client_id: '38145906488-qcuhj8ip8cv5vct41b1vk0q3330bte0j.apps.googleusercontent.com',
       client_secret: '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',
-      redirect_uri: 'http://localhost:8000/google/callback',
+      redirect_uri: 'https://alive-jade-hatchling.cyclic.app/google/callback',
       grant_type: 'authorization_code',
   };
 
